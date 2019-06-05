@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package org.unitec.elementos1903;
+
 import org.springframework.data.annotation.Id;
+
 
 
 /**
@@ -13,10 +15,16 @@ import org.springframework.data.annotation.Id;
  */
 public class Cliente {
     
-  @Id
+    @Id
     private Integer id;
     private String nombre;
     private String email;
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "id=" + id + ", nombre=" + nombre + ", email=" + email + '}';
+    }
+    
 
     public Integer getId() {
         return id;
@@ -46,6 +54,10 @@ public class Cliente {
         this.id = id;
         this.nombre = nombre;
         this.email = email;
+    
+        
+    }
+    public Cliente(){
     }
     
 }
