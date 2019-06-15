@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package org.unitec.elementos1903;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ControladorHola {
     @GetMapping("/hola")
     public String hola(){
-    return"Servicio de Rest en spring :";
+    return"Servidor WEB Sergio Santos :";
     }
 }
 //Generar repositorio de github "elementos-1903" 
